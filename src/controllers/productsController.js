@@ -21,8 +21,7 @@ const controller = {
 	// Detail - Detail from one product
 	detail: (req, res) => {
 		// Do the magic
-	   const id = +req.params.id;/* capturo lo q el usuario busca para renderizarlo buscarlo en mi base de datos */
-
+	   const id = +req.params.id;
 	   let product = products.find(product => product.id === id);
 
 	   return res.render('detail',{
